@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Records</title>
+    </head>
+    <body>
+        <h1>Records</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>TITLE</th>
+                <th>AGE</th>
+                <th>ADDDRESS</th>
+                <th>SALARY</th>
+            </tr>
+            {% for record in records %}
+            <tr>
+                <td>{{ record.ID }}</td>
+                <td>{{ record.TITLE }}</td>
+                <td>{{ record.AGE }}</td>
+                <td>{{ record.ADDDRESS }}</td>
+                <td>{{ record.SALARY }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+    </html>
+    
+    
+</body>
+</html>

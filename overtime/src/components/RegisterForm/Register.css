@@ -1,0 +1,45 @@
+.signUpForm_container{
+    box-shadow: 0 10px 10px #333;
+    width: 300px;
+    margin: 5rem auto 0;
+    padding: 0.5rem 1rem;
+}
+.signInForm_container{
+    box-shadow: 0 10px 10px #333;
+    margin: 7rem auto 1rem;
+    padding: 0.5rem 1rem;
+    width: 300px;
+}
+.signUpForm_container .sign_UpForm label, .signInForm_container .sign_InForm label{
+    display: block;
+}
+.signUpForm_container .sign_UpForm input, .signInForm_container .sign_InForm input{
+    border: 1.5px solid gray;
+    width: 100%;
+    padding: 0.5rem;
+}
+.signUpForm_container .sign_UpForm .form_group, .signInForm_container .sign_InForm .form_group{
+    margin: 1rem 0;
+}
+.signUp_btn, .signIn_btn{
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    width: 100%;
+    padding: 0.5rem;
+}
+/* SIGN IN STYLING */
+.Img_div{
+    width: 350px;
+}
+.Img_div img{
+    width: 100%;
+}
+@media(min-width: 764px){
+    .signUpForm_container{
+        width: 400px;
+    }
+    .signInForm_container{
+        width: 400px;
+    }
+}

@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary-color: #303C7B;
+  --bg-color: #FFFFFF;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* position: relative; */
+font-family: 'Raleway', sans-serif;
+}
+/* CONFIRMATION MODAL STYLING */
+.confirmation_modal_table  table{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 600px;
+  margin: auto;
+}
+.confirmation_modal_table thead th{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem 0;
+  flex: 1;
+}
+.confirmation_modal_table thead, .confirmation_modal_table tbody{
+  display: flex;
+  flex-direction: column;
+}
+.confirmation_modal_table tbody td{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  border: 1px solid gray;
+  height: 3rem;
+  padding: 0.5rem 1.5rem;
+}
+.modal_section{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem;
+  line-height: 2;
+  text-align: left;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.inner-overlay{
+  background-color: var(--bg-color);
+  border-radius: 5px;
+  box-shadow: 0 3px 10px gray;
+  padding: 2rem 5rem;
+}
+.modal_close_btn{
+  display: block;
+  color: red;
+  right: 5rem;
+}
+.modal_section h3{
+  font-weight: 700;
+}
+.modal_btn{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+  cursor: pointer;
+  width: 40%;
+  margin: 1rem auto;
+}
+.modal_btn .cancel_btn{
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 0.2rem 2.5rem;
+  transition: all ease 5s;
+}
+.modal_btn .cancel_btn:hover{
+  transform: scale(1.08);
+}
+.modal_btn .submit_btn{
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  background-color: green;
+  color: var(--bg-color);
+  padding: 0.2rem 2.5rem;
+  transition: all ease-in-out 2s;
+}
+.modal_btn .submit_btn:hover{
+  transform: scale(1.08);
+}
